@@ -1,6 +1,6 @@
 {
   "name": "hwal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "ISC",
   "description": "A TypeScript/JavaScript API for interacting with the XRP Ledger in Node.js and the browser",
   "files": [
@@ -27,9 +27,9 @@
     "bip39": "^3.0.4",
     "https-proxy-agent": "^5.0.0",
     "lodash": "^4.17.4",
-    "hwa-ripple-address-codec": "^0.0.1",
-    "hwa-ripple-binary-codec": "^0.0.1",
-    "hwa-ripple-keypairs": "^0.0.1",
+    "hwa-ripple-address-codec": "^0.0.3",
+    "hwa-ripple-binary-codec": "^0.0.3",
+    "hwa-ripple-keypairs": "^0.0.3",
     "ws": "^8.2.2"
   },
   "devDependencies": {
