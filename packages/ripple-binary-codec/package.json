@@ -31,9 +31,9 @@
     "url": "git@github.com:XRPLF/xrpl.js.git"
   },
   "bugs": {
-    "url": "https://github.com/XRPLF/xrpl.js/issues"
+    "url": "https://github.com/ln1778/hwa.js/issues"
   },
-  "homepage": "https://github.com/XRPLF/xrpl.js/tree/main/packages/ripple-binary-codec#readme",
+  "homepage": "https://github.com/ln1778/hwa.js/tree/main/packages/ripple-binary-codec#readme",
   "license": "ISC",
   "readmeFilename": "README.md",
   "prettier": "@xrplf/prettier-config",
