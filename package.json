@@ -1,6 +1,5 @@
 {
-  "name": "hwa.js",
-  "private": true,
+  "name": "@ln1778/hwa",
   "scripts": {
     "test": "lerna run test --stream",
     "test:browser": "lerna run test:browser --stream",
@@ -78,5 +77,22 @@
   "engines": {
     "node": ">=12.0.0",
     "npm": ">=7.0.0 < 9.0.0"
-  }
+  },
+  "description": "A JavaScript/TypeScript library for interacting with the XRP Ledger",
+  "version": "1.0.0",
+  "main": "jest.config.base.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ln1778/hwa.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ln1778/hwa.js/issues"
+  },
+  "homepage": "https://github.com/ln1778/hwa.js#readme"
 }
