@@ -27,9 +27,9 @@
     "bip39": "^3.0.4",
     "https-proxy-agent": "^5.0.0",
     "lodash": "^4.17.4",
-    "hwa-ripple-address-codec": "^0.0.3",
-    "hwa-ripple-binary-codec": "^0.0.3",
-    "hwa-ripple-keypairs": "^0.0.3",
+    "hwa-ripple-address-codec": "^0.0.4",
+    "hwa-ripple-binary-codec": "^0.0.4",
+    "hwa-ripple-keypairs": "file:../ripple-keypairs",
     "ws": "^8.2.2"
   },
   "devDependencies": {
@@ -75,7 +75,7 @@
   "prettier": "@xrplf/prettier-config",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ln1778/hwa.git"
+    "url": "git@github.com:ln1778/hwa.js.git"
   },
   "readmeFilename": "README.md",
   "engines": {

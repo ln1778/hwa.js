@@ -1,6 +1,6 @@
 {
   "name": "hwa-ripple-binary-codec",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "HWA Ledger binary codec",
   "files": [
     "dist/*",
@@ -17,7 +17,7 @@
     "buffer": "5.6.0",
     "create-hash": "^1.2.0",
     "decimal.js": "^10.2.0",
-    "hwa-ripple-address-codec": "^0.0.2"
+    "hwa-ripple-address-codec": "^0.0.4"
   },
   "scripts": {
     "build": "tsc -b && copyfiles ./src/enums/definitions.json ./dist/enums/",
@@ -28,12 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ln1778/hwa-ripple-binary-codec.git"
+    "url": "git@github.com:ln1778/hwa.js.git"
   },
   "bugs": {
     "url": "https://github.com/ln1778/hwa.js/issues"
   },
-  "homepage": "https://github.com/ln1778/hwa.js/tree/main/packages/hwa-ripple-binary-codec#readme",
+  "homepage": "https://github.com/ln1778/hwa.js/tree/main/packages/ripple-binary-codec#readme",
   "license": "ISC",
   "readmeFilename": "README.md",
   "prettier": "@xrplf/prettier-config",

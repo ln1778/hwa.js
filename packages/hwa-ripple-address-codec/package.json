@@ -1,6 +1,6 @@
 {
   "name": "hwa-ripple-address-codec",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "encodes/decodes base58 encoded XRP Ledger identifiers",
   "files": [
     "dist/*",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:ln1778/hwa-ripple-address-codec.git"
+    "url": "git@github.com:ln1778/hwa.js.git"
   },
   "prepublish": "tsc -b",
   "prepublishOnly": "tslint -b ./ && jest",

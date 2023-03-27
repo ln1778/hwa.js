@@ -1,6 +1,6 @@
 {
   "name": "hwa-ripple-keypairs",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Cryptographic key pairs for the XRP Ledger",
   "scripts": {
     "build": "tsc -b",
@@ -21,12 +21,12 @@
     "brorand": "^1.0.5",
     "elliptic": "^6.5.4",
     "hash.js": "^1.1.7",
-    "hwa-ripple-address-codec": "^0.0.2",
+    "hwa-ripple-address-codec": "^0.0.4",
     "hwa_sm-crypto": "^0.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ln1778/hwa-ripple-keypairs.git"
+    "url": "git@github.com:ln1778/hwa.js.git"
   },
   "license": "ISC",
   "prettier": "@xrplf/prettier-config",

@@ -15,10 +15,10 @@
     "access": "public"
   },
   "dependencies": {
-    "hwa-ripple-address-codec": "^0.0.4",
-    "hwa-ripple-binary-codec": "^0.0.4",
-    "hwa-ripple-keypairs": "^0.0.4",
-    "hwal": "^0.0.4",
+    "hwa-ripple-address-codec":"file:packages/hwa-ripple-address-codec",
+    "hwa-ripple-binary-codec":"file:packages/hwa-ripple-binary-codec",
+    "hwa-ripple-keypairs": "file:packages/hwa-ripple-keypairs",
+    "hwal": "file:packages/hwal",
     "hwa_sm-crypto": "^0.0.1"
   },
   "devDependencies": {
@@ -82,7 +82,7 @@
     "npm": ">=7.0.0 < 9.0.0"
   },
   "description": "A JavaScript/TypeScript library for interacting with the XRP Ledger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "jest.config.base.js",
   "directories": {
     "doc": "docs"
