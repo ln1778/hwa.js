@@ -8,9 +8,9 @@ module.exports = {
     tsconfigRootDir: __dirname,
     project: [
       './tsconfig.eslint.json',
-      '../ripple-binary-codec/tsconfig.eslint.json',
-      '../ripple-address-codec/tsconfig.eslint.json',
-      '../ripple-keypairs/tsconfig.eslint.json',
+      '../hwa-ripple-binary-codec/tsconfig.eslint.json',
+      '../hwa-ripple-address-codec/tsconfig.eslint.json',
+      '../hwa-ripple-keypairs/tsconfig.eslint.json',
     ],
 
     // Allow the use of imports / ES modules

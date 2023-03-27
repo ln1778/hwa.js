@@ -3,5 +3,5 @@ const base = require('../../jest.config.base.js')
 
 module.exports = {
   ...base,
-  displayName: 'ripple-address-codec',
+  displayName: 'hwa-ripple-address-codec',
 }

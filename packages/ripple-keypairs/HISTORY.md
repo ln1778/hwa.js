@@ -1,4 +1,4 @@
-# ripple-keypairs Release History
+# hwa-ripple-keypairs Release History
 
 ## Unreleased
 ### Changed
@@ -13,25 +13,25 @@
 - Fix issue where npm < 7 was not allowed to install the library
 
 ## 1.1.0 (2021-11-15)
-- Converts ripple-keypairs into a monorepo with ripple-binary-codec,
-  ripple-address-codec, and xrpl. Changes to build tooling but no new features or
+- Converts hwa-ripple-keypairs into a monorepo with hwa-ripple-binary-codec,
+  hwa-ripple-address-codec, and xrpl. Changes to build tooling but no new features or
   bug fixes
 
 ## 1.0.3 (2021-02-22)
 
 * Update dependencies:
-  * elliptic to 6.5.4 - includes security fix, although ripple-keypairs should not be susceptible because the vulnerable code is meant only for DH key exchange, which we do not use
-  * ripple-address-codec to 4.1.2
+  * elliptic to 6.5.4 - includes security fix, although hwa-ripple-keypairs should not be susceptible because the vulnerable code is meant only for DH key exchange, which we do not use
+  * hwa-ripple-address-codec to 4.1.2
   * bn.js, ts-node, @types/node, @types/mocha, codecov, prettier, typescript, eslint-config-prettier, eslint-plugin-import, elint-config-airbnb-base, eslint-plugin-prettier, ts-node, mocha
 
 ## 1.0.2 (2020-09-12)
 
 * Drop support for Node.js version 8 (#171)
-  * Node.js v8 reached End-of-Life on 31st December 2019. As ripple-keypairs is a security-sensitive library, we recommend upgrading to Node.js 10 or higher immediately. ([Node.js Releases](https://nodejs.org/en/about/releases/))
+  * Node.js v8 reached End-of-Life on 31st December 2019. As hwa-ripple-keypairs is a security-sensitive library, we recommend upgrading to Node.js 10 or higher immediately. ([Node.js Releases](https://nodejs.org/en/about/releases/))
 * Internal
   * Update dependencies (#170) (#163) (#173) (#172) (#175) (#177) (#179) (#180) (#181)
   * Bump elliptic from 6.5.2 to 6.5.3 (#190)
-    * We do not believe that the issue fixed in this patch affects ripple-keypairs in any way, but we are bumping the dependency just to stay up-to-date.
+    * We do not believe that the issue fixed in this patch affects hwa-ripple-keypairs in any way, but we are bumping the dependency just to stay up-to-date.
   * Bump lodash from 4.17.15 to 4.17.20 (#207)
 * Add GitHub Actions CI (#221)
 
@@ -49,7 +49,7 @@
 * Add yarn.lock
 * Export members and add default export
 * Internal
-  * Use published ripple-address-codec (#58)
+  * Use published hwa-ripple-address-codec (#58)
   * Replace TSLint with ESLint + Prettier (#71)
   * Add type (#74)
   * Remove unused code (#81)
@@ -69,4 +69,4 @@
 
 ## 0.10.1 (2017-11-10)
 
-* [Verify that generated keypairs can correctly sign a message](https://github.com/ripple/ripple-keypairs/pull/22)
+* [Verify that generated keypairs can correctly sign a message](https://github.com/ripple/hwa-ripple-keypairs/pull/22)

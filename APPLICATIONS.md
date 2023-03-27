@@ -78,7 +78,7 @@ Warning: Use at your own risk.
 
   Users can use the xumm application to track their accounts, balances and transactions. The true power of xumm is the platform available for developers.
 
-- **[Xpring Wallet](https://xpring.io)** (uses `ripple-keypairs`)
+- **[Xpring Wallet](https://xpring.io)** (uses `hwa-ripple-keypairs`)
 
   Non-custodial XRP wallet.
 
@@ -90,7 +90,7 @@ Warning: Use at your own risk.
 
   A free, open source XRP Wallet for iOS, Android, Windows, Mac and Linux.
 
-- **[Toastify Ledger](https://github.com/WietseWind/toastify-ledger)** (uses `ripple-keypairs`)
+- **[Toastify Ledger](https://github.com/WietseWind/toastify-ledger)** (uses `hwa-ripple-keypairs`)
 
   Add a Regular Key to a mnemonic XRP Wallet (e.g. Ledger Nano S) to use the account with a Family Seed (secret).
 
@@ -106,7 +106,7 @@ Warning: Use at your own risk.
 
   A vanity address is a wallet address containing a few characters you like at the beginning or the end of the wallet address.
 
-- **[XRP Account Mnemonic Recovery](https://github.com/WietseWind/xrp-mnemonic-recovery)** (uses `ripple-keypairs`)
+- **[XRP Account Mnemonic Recovery](https://github.com/WietseWind/xrp-mnemonic-recovery)** (uses `hwa-ripple-keypairs`)
 
   Recover a 24 word mnemonic if one word is wrong or one word is missing.
   
@@ -124,7 +124,7 @@ Warning: Use at your own risk.
 
   Send XRP using SMS text messages.
 
-- **[XRParrot](https://xrparrot.com/)** (uses `ripple-address-codec`)
+- **[XRParrot](https://xrparrot.com/)** (uses `hwa-ripple-address-codec`)
 
   Easy EUR (SEPA) to XRP transfer (currency conversion).
 

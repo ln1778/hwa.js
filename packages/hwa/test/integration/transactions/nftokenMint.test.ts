@@ -1,6 +1,6 @@
 import { assert } from 'chai'
 import _ from 'lodash'
-import { Client } from 'xrpl'
+import { Client } from 'hwal'
 
 import {
   convertStringToHex,

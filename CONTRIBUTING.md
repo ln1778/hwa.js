@@ -89,9 +89,9 @@ This is a monorepo, which means that there are multiple packages in a single Git
 The 4 packages currently here are:
 
 1. xrpl.js - The client library for interacting with the ledger.
-2. ripple-binary-codec - A library for serializing and deserializing transactions for the ledger.
-3. ripple-keypairs - A library for generating and using cryptographic keypairs.
-4. ripple-address-codec - A library for encoding and decoding XRP Ledger addresses and seeds.
+2. hwa-ripple-binary-codec - A library for serializing and deserializing transactions for the ledger.
+3. hwa-ripple-keypairs - A library for generating and using cryptographic keypairs.
+4. hwa-ripple-address-codec - A library for encoding and decoding XRP Ledger addresses and seeds.
 
 Each package has it's own README which dives deeper into what it's main purpose is, and the core functionality it offers.
 They also run tests independently as they were originally in separate repositories.
@@ -163,8 +163,8 @@ You need to specify which package is changing using the `-w` flag:
 ```bash
 ### adding a new dependency to `xrpl`
 npm install abbrev -w xrpl
-### adding a new dependency to `ripple-keypairs`
-npm install abbrev -w ripple-keypairs
+### adding a new dependency to `hwa-ripple-keypairs`
+npm install abbrev -w hwa-ripple-keypairs
 ### removing a dependency
 npm uninstall abbrev -w xrpl
 ```

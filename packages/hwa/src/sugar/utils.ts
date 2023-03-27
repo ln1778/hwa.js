@@ -1,4 +1,4 @@
-import { xAddressToClassicAddress, isValidXAddress } from 'ripple-address-codec'
+import { xAddressToClassicAddress, isValidXAddress } from 'hwa-ripple-address-codec'
 
 /**
  * If an address is an X-Address, converts it to a classic address.

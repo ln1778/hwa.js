@@ -11,12 +11,15 @@
     "update:check": "npx npm-check-updates --configFileName .ncurc.json",
     "update:confirm": "npx npm-check-updates --configFileName .ncurc.json -u"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
-    "ripple-address-codec": "file:packages/ripple-address-codec",
-    "ripple-binary-codec": "file:packages/ripple-binary-codec",
-    "ripple-keypairs": "file:packages/ripple-keypairs",
-    "hwa": "file:packages/hwa",
-    "sm-crypto": "git+https://github.com/maybeTomorrow/sm-crypto.git"
+    "hwa-ripple-address-codec": "^0.0.1",
+    "hwa-ripple-binary-codec": "^0.0.1",
+    "hwa-ripple-keypairs": "^0.0.1",
+    "hwal": "^0.0.1",
+    "hwa_sm-crypto": "^0.0.1"
   },
   "devDependencies": {
     "@types/brorand": "^1.0.30",

@@ -1,4 +1,4 @@
-# ripple-binary-codec Release History
+# hwa-ripple-binary-codec Release History
 
 ## Unreleased
 ### Changed
@@ -46,8 +46,8 @@
 - Fix issue where npm < 7 could not install the library
 
 ## 1.2.0 (2021-11-15)
-- Converts ripple-binary-codec into a monorepo with ripple-address-codec,
-  ripple-keypairs, and xrpl
+- Converts hwa-ripple-binary-codec into a monorepo with hwa-ripple-address-codec,
+  hwa-ripple-keypairs, and xrpl
 - Adds preliminary support for XLS-20 NFT definitions
 
 ## 1.1.3 (2021-06-11)
@@ -78,7 +78,7 @@
   - Javascript classes used
   - Generics for constructing core types
 - Reduced dependencies
-  - Dependent on create-hash, decimal.js, ripple-address-codec
+  - Dependent on create-hash, decimal.js, hwa-ripple-address-codec
 - Migrate testing to Jest and added tests
   - Tests for pseudo-transactions
 - Added support for NegativeUNL pseudo-transactions
@@ -86,7 +86,7 @@
 ## 0.2.6 (2019-12-31)
 
 - Update dependencies
-  - decimal.js, fs-extra, mocha, handlebars, bn.js, babel-eslint, ripple-address-codec
+  - decimal.js, fs-extra, mocha, handlebars, bn.js, babel-eslint, hwa-ripple-address-codec
 
 ## 0.2.5 (2019-12-14)
 
@@ -94,7 +94,7 @@
 
 ## 0.2.4 (2019-09-04)
 
-- Update ripple-address-codec to 3.0.4
+- Update hwa-ripple-address-codec to 3.0.4
 
 ## 0.2.3 (2019-08-29)
 
@@ -102,7 +102,7 @@
 
 ## 0.2.2 (2019-07-26)
 
-- Input validation - Amount and Fee should not allow fractional XRP drops ([#31](https://github.com/ripple/ripple-binary-codec/issues/31))
+- Input validation - Amount and Fee should not allow fractional XRP drops ([#31](https://github.com/ripple/hwa-ripple-binary-codec/issues/31))
 - Fix lint errors
 - Update dependencies (including lodash and mocha)
 - Require node 10 (.nvmrc)

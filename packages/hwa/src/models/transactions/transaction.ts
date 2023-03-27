@@ -3,7 +3,7 @@
 
 import isEqual from 'lodash/isEqual'
 import omitBy from 'lodash/omitBy'
-import { encode, decode } from 'ripple-binary-codec'
+import { encode, decode } from 'hwa-ripple-binary-codec'
 
 import { ValidationError } from '../../errors'
 import { setTransactionFlagsToNumber } from '../utils/flags'

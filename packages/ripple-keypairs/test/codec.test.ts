@@ -1,5 +1,5 @@
 import assert from 'assert'
-import * as api from 'ripple-address-codec'
+import * as api from 'hwa-ripple-address-codec'
 
 function toHex(bytes) {
   return Buffer.from(bytes).toString('hex').toUpperCase()
@@ -9,7 +9,7 @@ function toBytes(hex) {
   return Buffer.from(hex, 'hex').toJSON().data
 }
 
-describe('ripple-address-codec', function () {
+describe('hwa-ripple-address-codec', function () {
   function makeTest(type, base58, hex) {
     it(`can translate between ${hex} and ${base58} (encode ${type})`, () => {
       const actual = api[`encode${type}`](toBytes(hex))

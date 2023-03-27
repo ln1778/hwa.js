@@ -30,7 +30,7 @@ The `hashTx` helps with step 2, automatically using the `0x53545800` prefix need
 
 For details, see [Serialization Format](https://xrpl.org/serialization.html).
 
-_Removed:_ `computeTransactionSigningHash`, which took txJSON as a parameter. It was part of the deprecated ripple-hashes library. If you have txJSON, `encode` it with [ripple-binary-codec](https://github.com/ripple/ripple-binary-codec) first. Example: `return hashTx(encode(txJSON))`
+_Removed:_ `computeTransactionSigningHash`, which took txJSON as a parameter. It was part of the deprecated ripple-hashes library. If you have txJSON, `encode` it with [hwa-ripple-binary-codec](https://github.com/ripple/hwa-ripple-binary-codec) first. Example: `return hashTx(encode(txJSON))`
 
 ### computeAccountLedgerObjectID = (address: string): string
 

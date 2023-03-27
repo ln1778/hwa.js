@@ -1,5 +1,5 @@
 import assert from 'assert'
-import * as api from 'ripple-address-codec'
+import * as api from 'hwa-ripple-address-codec'
 
 function toHex(bytes: Buffer) {
   return Buffer.from(bytes).toString('hex').toUpperCase()
@@ -9,7 +9,7 @@ function toBytes(hex: string) {
   return Buffer.from(hex, 'hex').toJSON().data
 }
 
-describe('ripple-address-codec', function () {
+describe('hwa-ripple-address-codec', function () {
   describe('encodeSeed', function () {
     it('encodes a secp256k1 seed', () => {
       const result = api.encodeSeed(

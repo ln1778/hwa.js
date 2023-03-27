@@ -43,7 +43,7 @@ Wallet.fromMmnemonic()
 
 ## 2.4.0 (2022-09-01)
 ### Added
-* Export `verify` from ripple-keypairs as `verifyKeypairSignature` for use in web-apps.
+* Export `verify` from hwa-ripple-keypairs as `verifyKeypairSignature` for use in web-apps.
 
 ### Fixed
 * `Wallet.fromMnemonic` now allows lowercase for RFC1751 mnemonics (#2046)
@@ -76,7 +76,7 @@ Wallet.fromMmnemonic()
 
 ## 2.2.2 (2022-05-02)
 ### Added
-* Export deriveAddress from ripple-keypairs in xrpl.js
+* Export deriveAddress from hwa-ripple-keypairs in xrpl.js
 * Deprecated BroadcastClient as it does not solve the reliable connection problem
 
 ### Fixed
@@ -114,7 +114,7 @@ Wallet.fromMmnemonic()
   * Fixed issues which made Windows contributors unable to build the library
 
 ## 2.0.2 (2021-11-15)
-* Imports ripple-address-codec, ripple-binary-codec, and ripple-keypairs into
+* Imports hwa-ripple-address-codec, hwa-ripple-binary-codec, and hwa-ripple-keypairs into
   this repo. No new features or bug fixes
 
 ## 2.0.1 (2021-11-01)
@@ -153,7 +153,7 @@ A migration guide is available at https://xrpl.org/xrpljs2-migration-guide.html.
 * Utils
   * Exported all utils at the top level and removed them from the client
   * Renamed many of the utils to be more descriptive and more succinct
-  * Moved `ripple-address-codec` functions from `Client` to `utils` (and exported at the top level)
+  * Moved `hwa-ripple-address-codec` functions from `Client` to `utils` (and exported at the top level)
   * Moved `hasNextPage` from `Client` to `utils`
 * Renamed `client.generateFaucetWallet` to `client.fundWallet` (and it now returns a `Wallet` and the wallet's balance)
 * Better flag organization
@@ -230,7 +230,7 @@ A migration guide is available at https://xrpl.org/xrpljs2-migration-guide.html.
   * Fix miscommunication with ripplingDisabled in trustlines (#1481)
   * Allow X-address for issuer (#1471)
 * Dependencies
-  * ws, ripple-binary-codec
+  * ws, hwa-ripple-binary-codec
   * deps-dev: typescript, @types/node, ts-node
 
 The SHA-256 checksums for the browser version of this release can be found below.
@@ -248,7 +248,7 @@ fd40457a89a14732ce261148e129cdda5aa963d9a433c57700353083faa1bffe  build/ripple-l
 * Docs
   * Update boilerplate (#1459) (thanks @mDuo13)
 * Dependencies
-  * @types/node, @types/ws, @types/lodash, @types/mocha, prettier, mocha, webpack, ripple-binary-codec, ws, webpack-cli, doctoc
+  * @types/node, @types/ws, @types/lodash, @types/mocha, prettier, mocha, webpack, hwa-ripple-binary-codec, ws, webpack-cli, doctoc
 
 The SHA-256 checksums for the browser version of this release can be found below.
 ```
@@ -264,7 +264,7 @@ fc17a5572001d814ea6b81aa701fcb66882ec031c68afb769a8ea8b71c6529a6  build/ripple-l
   * Use 'current' ledger when preparing txs (#1429) (#999)
   * Allow multiple settings at once (#1435)
 * Dependencies
-  * ripple-address-codec, prettier, mocha
+  * hwa-ripple-address-codec, prettier, mocha
 
 The SHA-256 checksums for the browser version of this release can be found below.
 ```
@@ -307,7 +307,7 @@ b1d0bab54c6dbc76091610ede54a4269e73dea8cc6a9c25738d62bd7671920e4  build/ripple-l
 
 ## 1.9.3 (2021-03-16)
 
-* Expose ripple-address-codec methods. These are static methods on RippleAPI, so you do not need to create a RippleAPI instance.
+* Expose hwa-ripple-address-codec methods. These are static methods on RippleAPI, so you do not need to create a RippleAPI instance.
   * `classicAddressToXAddress` / `xAddressToClassicAddress`
   * `isValidXAddress` / `isValidClassicAddress`
   * `encodeSeed` / `decodeSeed`
@@ -371,9 +371,9 @@ fc17a5572001d814ea6b81aa701fcb66882ec031c68afb769a8ea8b71c6529a6  build/ripple-l
 * Bug fixes
   * Deserialization and verification of payment paths (#1382) (#1347) (#1376)
 * Dependencies
-  * Bump ripple-binary-codec to 1.1.2
+  * Bump hwa-ripple-binary-codec to 1.1.2
     * Fix edge case when constructing a value from "0", which can occur when using rippled v1.7.0
-  * Bump lodash, ripple-address-codec
+  * Bump lodash, hwa-ripple-address-codec
 
 The SHA-256 checksums for the browser version of this release can be found below.
 ```
@@ -394,8 +394,8 @@ fc17a5572001d814ea6b81aa701fcb66882ec031c68afb769a8ea8b71c6529a6  build/ripple-l
 * Bug fixes
   * Allow connectionTimeout option to be customized (#1355)
 * Dependencies
-  * Bump ripple-keypairs to 1.0.3
-  * Bump elliptic to 6.5.4 (this patches a potential security issue, although we do not believe that the issue affects ripple-lib: [details](https://github.com/ripple/ripple-keypairs/security/advisories/GHSA-w6x3-9ph2-7x54))
+  * Bump hwa-ripple-keypairs to 1.0.3
+  * Bump elliptic to 6.5.4 (this patches a potential security issue, although we do not believe that the issue affects ripple-lib: [details](https://github.com/ripple/hwa-ripple-keypairs/security/advisories/GHSA-w6x3-9ph2-7x54))
 
 The SHA-256 checksums for the browser version of this release can be found below.
 ```
@@ -419,7 +419,7 @@ fc17a5572001d814ea6b81aa701fcb66882ec031c68afb769a8ea8b71c6529a6  build/ripple-l
 * Node.js
   * Require Node.js version 10.13.0+
 * Internal
-  * Update webpack, webpack-cli, mocha, nyc, ripple-binary-codec
+  * Update webpack, webpack-cli, mocha, nyc, hwa-ripple-binary-codec
   * Run prettier to format code
 
 The SHA-256 checksums for the browser version of this release can be found below.
@@ -432,7 +432,7 @@ The SHA-256 checksums for the browser version of this release can be found below
 ## 1.8.2 (2020-10-23)
 
 * Bug fixes
-  * Browser compatibility: Use ripple-binary-codec 0.2.x to prevent browser issues (#1321)
+  * Browser compatibility: Use hwa-ripple-binary-codec 0.2.x to prevent browser issues (#1321)
   * Memory leak: Clear awaiting response promises to prevent memory leak (#1302)
 * Feature: getSettings() - allow ledgerVersion to be 'validated', 'closed', or 'current' (#1298)
 * Docs: Update APPLICATIONS.md
@@ -448,7 +448,7 @@ ba760c36028b8a3ce267386e188a422890dfb1b03bc87c852a4c2034ea9bac2e  ripple-latest-
 
 * Internal
   * Bump elliptic to 6.5.3 (this patches a potential security issue, although we do not believe that the issue affects ripple-lib)
-  * Bump ripple-binary-codec to 1.0.2
+  * Bump hwa-ripple-binary-codec to 1.0.2
   * Bump lodash to 4.17.19
 
 The SHA-256 checksums for the browser version of this release can be found below.
@@ -480,7 +480,7 @@ The SHA-256 checksums for the browser version of this release can be found below
 * Add api.connection.getReserveBase() (#1259)
 * Travis: remove node 8 (#1257)
 * Dependencies
-  * Update ripple-address-codec, @types/ws, @types/lodash, https-proxy-agent
+  * Update hwa-ripple-address-codec, @types/ws, @types/lodash, https-proxy-agent
   * Update devDependencies: eventemitter2, nyc, ejs, @types/node, webpack, ts-node, prettier, @typescript-eslint/eslint-plugin
 
 ## 1.6.5 (2020-03-23)
@@ -498,18 +498,18 @@ The SHA-256 checksums for the browser version of this release can be found below
   * Improve unit tests
 * Dependencies
   * Update webpack-cli, @types/node, webpack, @typescript-eslint/eslint-plugin,
-    typescript, ripple-keypairs
+    typescript, hwa-ripple-keypairs
 
 ## 1.6.3 (2020-02-05)
 
-* Update ripple-keypairs to 1.0.0
+* Update hwa-ripple-keypairs to 1.0.0
 * Bug fix: Assign event listener to socket close event on open before attempting post-open logic (#1186)
   * Protects against possible unhandled rejection in disconnect
   * Adds the Connection `_ws.close` event listener post `_ws.open` before executing any post `_ws.open` logic, i.e. `Connection._subscribeToLedger`
   * This prevents a reconnection error loop that occurs if `Connection._ws` is never cleaned up by the unreachable `_ws.close` event listener
   * Also ensures that a possible disconnect() promise rejection is not unhandled if any `_ws.open` logic in `Connection.connect()` throws
 * Dependencies
-  * Update mocha-junit-reporter, @types/node, mocha, @typescript-eslint/eslint-plugin, ripple-address-codec
+  * Update mocha-junit-reporter, @types/node, mocha, @typescript-eslint/eslint-plugin, hwa-ripple-address-codec
 
 ## 1.6.2 (2020-01-17)
 
@@ -531,7 +531,7 @@ The SHA-256 checksums for the browser version of this release can be found below
   * In some cases, ripple-lib would fail to wait for the connection to be ready (#1119)
 * Dependencies
   * Update docs dependencies, ejs and doctoc (#1153)
-  * Update eslint, ripple-lib-transactionparser, typescript, nyc, ws, @types/node, ripple-binary-codec, mocha, mocha-junit-reporter
+  * Update eslint, ripple-lib-transactionparser, typescript, nyc, ws, @types/node, hwa-ripple-binary-codec, mocha, mocha-junit-reporter
 * Internal
   * Add LedgerHistory to Connection (#1119): Moved ledger logic into its own Ledger class
 
@@ -564,7 +564,7 @@ The SHA-256 checksums for the browser version of this release can be found below
 * Dependencies
   * Update TypeScript version (#1096)
   * Update ripple-lib-transactionparser to 0.8.1 (#1097)
-  * Update ripple-binary-codec to 0.2.5
+  * Update hwa-ripple-binary-codec to 0.2.5
   * Update webpack (#1112)
   * Require node 8 and yarn (#1107)
 * Testing: Refactor and add unit tests
@@ -595,7 +595,7 @@ The SHA-256 checksums for the browser version of this release can be found below
 * Docs: `getAccountObjects` doc fix
 * Dependencies:
   * Update `bignumber.js`
-  * Update `ripple-keypairs`
+  * Update `hwa-ripple-keypairs`
   * Update `ws`
 * Build process: Update `webpack` flow
 
@@ -628,7 +628,7 @@ The SHA-256 checksums for the browser version of this release can be found below
 
 ## 1.3.3 (2019-09-10)
 
-* Expand node version compatibility to support Node.js 12 ([ripple-binary-codec#32](https://github.com/ripple/ripple-binary-codec/issues/32))
+* Expand node version compatibility to support Node.js 12 ([hwa-ripple-binary-codec#32](https://github.com/ripple/hwa-ripple-binary-codec/issues/32))
 
 ## 1.3.2 (2019-09-03)
 
@@ -773,7 +773,7 @@ Note: There is no browser version of this release.
 
 ## 1.2.1 (2019-03-23)
 
-* Update `ripple-binary-codec` to 0.2.1 to support `tecKILLED`
+* Update `hwa-ripple-binary-codec` to 0.2.1 to support `tecKILLED`
 
 The SHA-256 checksums for the browser version of this release can be found
 below.
@@ -1311,7 +1311,7 @@ The SHA-256 checksums for the browser version of this release can be found below
 + [Update ws dependency to 3.3.1](https://github.com/ripple/ripple-lib/pull/804)
 + [Remove unnecessary polyfills](https://github.com/ripple/ripple-lib/pull/807)
 + Fix lint errors ([#786](https://github.com/ripple/ripple-lib/pull/786), [#808](https://github.com/ripple/ripple-lib/pull/808))
-+ [Update ripple-keypairs dependency to 0.10.1](https://github.com/ripple/ripple-lib/pull/805)
++ [Update hwa-ripple-keypairs dependency to 0.10.1](https://github.com/ripple/ripple-lib/pull/805)
 
 The SHA-256 checksums for the browser version of this release can be found below.
 ```
@@ -1351,7 +1351,7 @@ e6ad9a9c111ab696f5637bfa372d80999e5ae362  ripple-0.17.9-min.js
 
 ## 0.16.2
 
-+ Bump `ripple-binary-codec` dependency version to 0.1.1 to fix issue with `computeLedgerHash` for transactions with `DeliverMin`
++ Bump `hwa-ripple-binary-codec` dependency version to 0.1.1 to fix issue with `computeLedgerHash` for transactions with `DeliverMin`
 
 ## 0.16.1
 

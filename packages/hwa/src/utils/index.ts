@@ -13,9 +13,9 @@ import {
   isValidClassicAddress,
   isValidXAddress,
   xAddressToClassicAddress,
-} from 'ripple-address-codec'
-import * as rbc from 'ripple-binary-codec'
-import { verify as verifyKeypairSignature } from 'ripple-keypairs'
+} from 'hwa-ripple-address-codec'
+import * as rbc from 'hwa-ripple-binary-codec'
+import { verify as verifyKeypairSignature } from 'hwa-ripple-keypairs'
 
 import { LedgerEntry } from '../models/ledger'
 import { Response } from '../models/methods'

@@ -20,7 +20,7 @@
   },
   "references": [
     {
-      "path": "../ripple-address-codec/tsconfig.json"
+      "path": "../hwa-ripple-address-codec/tsconfig.json"
     }
   ],
   "include": [

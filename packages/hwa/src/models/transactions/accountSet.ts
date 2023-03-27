@@ -1,6 +1,6 @@
 /* eslint-disable complexity -- Necessary for validateAccountSet */
 
-import { isValidClassicAddress } from 'ripple-address-codec'
+import { isValidClassicAddress } from 'hwa-ripple-address-codec'
 
 import { ValidationError } from '../../errors'
 

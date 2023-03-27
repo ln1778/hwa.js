@@ -2,9 +2,9 @@ import * as assert from 'assert'
 import brorand = require('brorand')
 import * as hashjs from 'hash.js'
 import * as elliptic from 'elliptic'
-import { sm2 } from 'sm-crypto'
+import { sm2 } from 'hwa_sm-crypto'
 
-import * as addressCodec from 'ripple-address-codec'
+import * as addressCodec from 'hwa-ripple-address-codec'
 import { derivePrivateKey, accountPublicFromPublicGenerator } from './secp256k1'
 import * as utils from './utils'
 

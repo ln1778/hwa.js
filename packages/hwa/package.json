@@ -27,9 +27,9 @@
     "bip39": "^3.0.4",
     "https-proxy-agent": "^5.0.0",
     "lodash": "^4.17.4",
-    "ripple-address-codec": "^4.2.4",
-    "ripple-binary-codec": "^1.4.2",
-    "ripple-keypairs": "file:../ripple-keypairs",
+    "hwa-ripple-address-codec": "^4.2.4",
+    "hwa-ripple-binary-codec": "^1.4.2",
+    "hwa-ripple-keypairs": "file:../hwa-ripple-keypairs",
     "ws": "^8.2.2"
   },
   "devDependencies": {

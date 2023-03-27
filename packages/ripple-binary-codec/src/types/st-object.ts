@@ -1,6 +1,6 @@
 import { Field, FieldInstance, Bytes } from '../enums'
 import { SerializedType, JsonObject } from './serialized-type'
-import { xAddressToClassicAddress, isValidXAddress } from 'ripple-address-codec'
+import { xAddressToClassicAddress, isValidXAddress } from 'hwa-ripple-address-codec'
 import { BinaryParser } from '../serdes/binary-parser'
 import { BinarySerializer, BytesList } from '../serdes/binary-serializer'
 import { Buffer } from 'buffer/'
