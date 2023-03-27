@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "../../xrpl"
+  },
+  "include": ["./src/**/*.ts", "../src/**/*.ts", "../src/**/*.json"]
+}
